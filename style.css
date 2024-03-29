@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    box-shadow: 4px 4px 18px greenyellow;
+    height: 56px; 
+    /* min-hight ใช้เมื่อไม่ fix ความสูง */
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+}
+
+nav.left{
+    /* border: 1px solid red; */
+    width: 320px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+nav.left input{
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+nav.center{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    
+nav.center .box-icon{
+    /* background-color: blanchedalmond; */
+    width: 129px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+nav.center .box-icon:hover{
+    background-color: palevioletred;
+}
+
+nav.right{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    flex-grow: 1;
+}
+
+nav.right .round-icon{
+    background-color: #e4e6eb;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+nav.right .round-icon:hover{
+    background-color: palevioletred;
+}
+
+.main-wrapper{
+    /* background-color: cadetblue; */
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-left{
+    border: 1px dashed black;
+    min-height: 100vh;
+    flex-basis: 360px;
+}
+
+.new-feed{
+    border: 1px dashed black;
+    min-height: 100vh;
+    flex-basis: 680px;
+}
+
+.sidebar-right{
+    border: 1px dashed black;
+    min-height: 100vh;
+    flex-basis: 360px;
+}
