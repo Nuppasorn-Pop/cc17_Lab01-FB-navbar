@@ -5,17 +5,15 @@
 }
 
 header {
-    background-color: aqua;
     box-shadow: 4px 4px 18px greenyellow;
     height: 56px; 
-    /* min-hight ใช้เมื่อไม่ fix ความสูง */
     display: flex;
     justify-content: space-between;
     padding-inline: 8px;
+    box-shadow: rgb(181, 178, 178) 4px 4px 8px;
 }
 
 nav.left{
-    /* border: 1px solid red; */
     width: 320px;
     display: flex;
     gap: 8px;
@@ -32,7 +30,6 @@ nav.left input{
 }
 
 nav.center{
-    /* border: 1px solid red; */
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -43,7 +40,6 @@ nav.center{
 }
     
 nav.center .box-icon{
-    /* background-color: blanchedalmond; */
     width: 129px;
     height: 100%;
     display: flex;
@@ -55,7 +51,6 @@ nav.center .box-icon:hover{
 }
 
 nav.right{
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -71,33 +66,39 @@ nav.right .round-icon{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
+}
+
+.round-icon img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 nav.right .round-icon:hover{
     background-color: palevioletred;
 }
 
-.main-wrapper{
-    /* background-color: cadetblue; */
-    min-height: auto;
+.main-wrapper {
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 
-.sidebar-left{
-    border: 1px dashed black;
+.sidebar-left {
+    border: 1px dashed red;
     min-height: 100vh;
     flex-basis: 360px;
+
 }
 
-.new-feed{
-    border: 1px dashed black;
+.new-feed {
+    border: 1px dashed red;
     min-height: 100vh;
-    flex-basis: 680px;
+    flex-basis: 800px;
 }
 
-.sidebar-right{
-    border: 1px dashed black;
+.sidebar-right {
+    border: 1px dashed red;
     min-height: 100vh;
     flex-basis: 360px;
 }
