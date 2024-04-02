@@ -1,71 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flex</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="left">
-            <div class="logo">
-                <svg fill="#0766ff" width="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#0766ff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
-            </div>
-            <input type="text" placeholder="ค้นหาบน Facebook:">
-        </nav>
-        <nav class="center">
-            <div class="box-icon">
-                <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 22L2 22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 22V9.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 9.5V13.5M20 22V17.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="#1C274C" stroke-width="1.5"></path> </g></svg></div>
-            <div class="box-icon">
-                <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path> </g></svg>
-            </div>
-            <div class="box-icon">
-                <svg width="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style> </defs> <title></title> <g data-name="92-vdo" id="_92-vdo"> <rect class="cls-1" height="18" rx="2" ry="2" width="22" x="1" y="7"></rect> <polygon class="cls-1" points="31 24 23 20 23 12 31 8 31 24"></polygon> <line class="cls-1" x1="12" x2="12" y1="12" y2="20"></line> <line class="cls-1" x1="16" x2="8" y1="16" y2="16"></line> </g> </g></svg>
-            </div>
-            <div class="box-icon">
-                <svg width="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 6C7 5.44772 7.44771 5 8 5C8.55228 5 9 5.44772 9 6V7H10C10.5523 7 11 7.44771 11 8C11 8.55228 10.5523 9 10 9H9V10C9 10.5523 8.55228 11 8 11C7.44771 11 7 10.5523 7 10V9H6C5.44771 9 5 8.55229 5 8C5 7.44771 5.44771 7 6 7H7V6Z" fill="#0F0F0F"></path> <path d="M17 6C17 6.55229 16.5523 7 16 7C15.4477 7 15 6.55229 15 6C15 5.44772 15.4477 5 16 5C16.5523 5 17 5.44772 17 6Z" fill="#0F0F0F"></path> <path d="M16 11C16.5523 11 17 10.5523 17 10C17 9.44771 16.5523 9 16 9C15.4477 9 15 9.44771 15 10C15 10.5523 15.4477 11 16 11Z" fill="#0F0F0F"></path> <path d="M19 8C19 8.55229 18.5523 9 18 9C17.4477 9 17 8.55229 17 8C17 7.44771 17.4477 7 18 7C18.5523 7 19 7.44771 19 8Z" fill="#0F0F0F"></path> <path d="M14 9C14.5523 9 15 8.55229 15 8C15 7.44771 14.5523 7 14 7C13.4477 7 13 7.44771 13 8C13 8.55229 13.4477 9 14 9Z" fill="#0F0F0F"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17856 3.46413C2.7668 1.72817 4.47823 1 5.99997 1H18C19.5217 1 21.2331 1.72817 21.8214 3.46411C22.5987 5.75813 22.9381 9.03747 23.0762 12.1306C23.2157 15.2519 23.1537 18.2926 23.0858 20.165C23.0275 21.7748 21.6987 23 20.1211 23H18.5615C17.1849 23 15.985 22.0631 15.6511 20.7276L14.4086 15.7575C14.2973 15.3123 13.8973 15 13.4384 15H10.5615C10.1026 15 9.70266 15.3123 9.59137 15.7575L8.34884 20.7276C8.01496 22.0631 6.81501 23 5.43841 23H3.87886C2.30118 23 0.972467 21.7748 0.914126 20.165C0.846263 18.2926 0.784238 15.2519 0.923689 12.1306C1.06188 9.03748 1.40122 5.75815 2.17856 3.46413ZM5.99997 3C5.00364 3 4.29265 3.45709 4.07276 4.10599C3.39318 6.11152 3.05905 9.14533 2.9217 12.2198C2.7856 15.2661 2.84594 18.2475 2.91281 20.0926C2.93098 20.5937 3.34429 21 3.87886 21H5.43841C5.89728 21 6.29726 20.6877 6.40855 20.2425L7.65109 15.2724C7.98496 13.9369 9.18491 13 10.5615 13H13.4384C14.815 13 16.015 13.9369 16.3488 15.2724L17.5914 20.2425C17.7027 20.6877 18.1026 21 18.5615 21H20.1211C20.6556 21 21.0689 20.5937 21.0871 20.0926C21.154 18.2475 21.2143 15.2661 21.0782 12.2198C20.9409 9.14532 20.6068 6.11151 19.9272 4.10598C19.7073 3.45708 18.9963 3 18 3H5.99997Z" fill="#0F0F0F"></path> </g></svg>
-            </div>
-            
-        </nav>
-        <nav class="right">
-            <div class="round-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--primary-icon);">
-                    <path d="M12 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 16a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 17a3 3 0 1 0 0 6 3 3 0 0 0 0-6z">
-                    </path>
-                  </svg>
-                </div>
-                <div class="round-icon">
-                    <svg viewBox="0 0 12 13" width="20" height="20" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--primary-icon);">
-                        <g fill-rule="evenodd" transform="translate(-450 -1073)">
-                          <path d="m459.603 1077.948-1.762 2.851a.89.89 0 0 1-1.302.245l-1.402-1.072a.354.354 0 0 0-.433.001l-1.893 1.465c-.253.196-.583-.112-.414-.386l1.763-2.851a.89.89 0 0 1 1.301-.245l1.402 1.072a.354.354 0 0 0 .434-.001l1.893-1.465c.253-.196.582.112.413.386M456 1073.5c-3.38 0-6 2.476-6 5.82 0 1.75.717 3.26 1.884 4.305.099.087.158.21.162.342l.032 1.067a.48.48 0 0 0 .674.425l1.191-.526a.473.473 0 0 1 .32-.024c.548.151 1.13.231 1.737.231 3.38 0 6-2.476 6-5.82 0-3.344-2.62-5.82-6-5.82">
-                          </path>
-                        </g>
-                      </svg>
-                </div>
-            <div class="round-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--accent);">
-                    <path d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z">
-                    </path>
-                  </svg>
-            </div>
-            <div class="round-icon">
-                <img src="./profile.jpg" alt="profile">
-            </div>
-        </nav>
+      <nav class="left">
+        <div class="logo">
+          <svg
+            fill="#0766ff"
+            width="40px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#0766ff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <input type="text" placeholder="ค้นหาบน Facebook:" />
+      </nav>
+      <nav class="center">
+        <div class="box-icon">
+          <svg
+            width="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M22 22L2 22"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M4 22V9.5"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 9.5V13.5M20 22V17.5"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="box-icon">
+          <svg
+            width="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="box-icon">
+          <svg
+            width="25px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  }
+                </style>
+              </defs>
+              <title></title>
+              <g data-name="92-vdo" id="_92-vdo">
+                <rect
+                  class="cls-1"
+                  height="18"
+                  rx="2"
+                  ry="2"
+                  width="22"
+                  x="1"
+                  y="7"
+                ></rect>
+                <polygon
+                  class="cls-1"
+                  points="31 24 23 20 23 12 31 8 31 24"
+                ></polygon>
+                <line class="cls-1" x1="12" x2="12" y1="12" y2="20"></line>
+                <line class="cls-1" x1="16" x2="8" y1="16" y2="16"></line>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="box-icon">
+          <svg
+            width="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M7 6C7 5.44772 7.44771 5 8 5C8.55228 5 9 5.44772 9 6V7H10C10.5523 7 11 7.44771 11 8C11 8.55228 10.5523 9 10 9H9V10C9 10.5523 8.55228 11 8 11C7.44771 11 7 10.5523 7 10V9H6C5.44771 9 5 8.55229 5 8C5 7.44771 5.44771 7 6 7H7V6Z"
+                fill="#0F0F0F"
+              ></path>
+              <path
+                d="M17 6C17 6.55229 16.5523 7 16 7C15.4477 7 15 6.55229 15 6C15 5.44772 15.4477 5 16 5C16.5523 5 17 5.44772 17 6Z"
+                fill="#0F0F0F"
+              ></path>
+              <path
+                d="M16 11C16.5523 11 17 10.5523 17 10C17 9.44771 16.5523 9 16 9C15.4477 9 15 9.44771 15 10C15 10.5523 15.4477 11 16 11Z"
+                fill="#0F0F0F"
+              ></path>
+              <path
+                d="M19 8C19 8.55229 18.5523 9 18 9C17.4477 9 17 8.55229 17 8C17 7.44771 17.4477 7 18 7C18.5523 7 19 7.44771 19 8Z"
+                fill="#0F0F0F"
+              ></path>
+              <path
+                d="M14 9C14.5523 9 15 8.55229 15 8C15 7.44771 14.5523 7 14 7C13.4477 7 13 7.44771 13 8C13 8.55229 13.4477 9 14 9Z"
+                fill="#0F0F0F"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.17856 3.46413C2.7668 1.72817 4.47823 1 5.99997 1H18C19.5217 1 21.2331 1.72817 21.8214 3.46411C22.5987 5.75813 22.9381 9.03747 23.0762 12.1306C23.2157 15.2519 23.1537 18.2926 23.0858 20.165C23.0275 21.7748 21.6987 23 20.1211 23H18.5615C17.1849 23 15.985 22.0631 15.6511 20.7276L14.4086 15.7575C14.2973 15.3123 13.8973 15 13.4384 15H10.5615C10.1026 15 9.70266 15.3123 9.59137 15.7575L8.34884 20.7276C8.01496 22.0631 6.81501 23 5.43841 23H3.87886C2.30118 23 0.972467 21.7748 0.914126 20.165C0.846263 18.2926 0.784238 15.2519 0.923689 12.1306C1.06188 9.03748 1.40122 5.75815 2.17856 3.46413ZM5.99997 3C5.00364 3 4.29265 3.45709 4.07276 4.10599C3.39318 6.11152 3.05905 9.14533 2.9217 12.2198C2.7856 15.2661 2.84594 18.2475 2.91281 20.0926C2.93098 20.5937 3.34429 21 3.87886 21H5.43841C5.89728 21 6.29726 20.6877 6.40855 20.2425L7.65109 15.2724C7.98496 13.9369 9.18491 13 10.5615 13H13.4384C14.815 13 16.015 13.9369 16.3488 15.2724L17.5914 20.2425C17.7027 20.6877 18.1026 21 18.5615 21H20.1211C20.6556 21 21.0689 20.5937 21.0871 20.0926C21.154 18.2475 21.2143 15.2661 21.0782 12.2198C20.9409 9.14532 20.6068 6.11151 19.9272 4.10598C19.7073 3.45708 18.9963 3 18 3H5.99997Z"
+                fill="#0F0F0F"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </nav>
+      <nav class="right">
+        <div class="round-icon">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
+            style="--color: var(--primary-icon)"
+          >
+            <path
+              d="M12 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 16a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 17a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+            ></path>
+          </svg>
+        </div>
+        <div class="round-icon">
+          <svg
+            viewBox="0 0 12 13"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
+            style="--color: var(--primary-icon)"
+          >
+            <g fill-rule="evenodd" transform="translate(-450 -1073)">
+              <path
+                d="m459.603 1077.948-1.762 2.851a.89.89 0 0 1-1.302.245l-1.402-1.072a.354.354 0 0 0-.433.001l-1.893 1.465c-.253.196-.583-.112-.414-.386l1.763-2.851a.89.89 0 0 1 1.301-.245l1.402 1.072a.354.354 0 0 0 .434-.001l1.893-1.465c.253-.196.582.112.413.386M456 1073.5c-3.38 0-6 2.476-6 5.82 0 1.75.717 3.26 1.884 4.305.099.087.158.21.162.342l.032 1.067a.48.48 0 0 0 .674.425l1.191-.526a.473.473 0 0 1 .32-.024c.548.151 1.13.231 1.737.231 3.38 0 6-2.476 6-5.82 0-3.344-2.62-5.82-6-5.82"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="round-icon">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
+            style="--color: var(--accent)"
+          >
+            <path
+              d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z"
+            ></path>
+          </svg>
+        </div>
+        <div class="round-icon">
+          <img src="./profile.jpg" alt="profile" />
+        </div>
+      </nav>
     </header>
     <div class="main-wrapper">
-        <div class="sidebar-left">Left</div>
-        <div class="new-feed">news</div>
-        <div class="sidebar-right">right</div>
-
+      <div class="sidebar-left">Left</div>
+      <div class="new-feed">news</div>
+      <div class="sidebar-right">right</div>
     </div>
-    
-</body>
+  </body>
 </html>
-
-
-
-
-
-
